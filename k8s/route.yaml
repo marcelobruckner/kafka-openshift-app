@@ -1,0 +1,14 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: kafka-app-route
+  namespace: kafka-app
+spec:
+  to:
+    kind: Service
+    name: kafka-app-service
+  port:
+    targetPort: http
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect

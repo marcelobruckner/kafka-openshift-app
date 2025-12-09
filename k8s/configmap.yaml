@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kafka-app-config
+  namespace: kafka-app
+data:
+  KAFKA_BOOTSTRAP_SERVERS: "my-cluster-kafka-bootstrap:9093"
+  KAFKA_CONSUMER_GROUP: "meu-grupo-consumidor"
+  KAFKA_SECURITY_PROTOCOL: "SASL_SSL"
+  KAFKA_SASL_MECHANISM: "SCRAM-SHA-512"
