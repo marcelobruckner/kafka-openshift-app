@@ -3,18 +3,11 @@ kind: Namespace
 metadata:
   name: kafka-infra
 ---
-apiVersion: operators.coreos.com/v1
-kind: OperatorGroup
-metadata:
-  name: kafka-infra-operator-group
-  namespace: kafka-infra
-spec: {}
----
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
   name: amq-streams
-  namespace: kafka-infra
+  namespace: openshift-operators
 spec:
   channel: stable
   name: amq-streams
