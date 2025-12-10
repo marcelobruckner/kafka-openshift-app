@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: kafka-app
-        image: kafka-openshift-app:latest
+        image: marcelobruckner/kafka-openshift-app:1.0
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
