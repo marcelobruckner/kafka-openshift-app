@@ -4,7 +4,7 @@ metadata:
   name: kafka-app-config
   namespace: kafka-app
 data:
-  KAFKA_BOOTSTRAP_SERVERS: "my-cluster-kafka-bootstrap:9093"
+  KAFKA_BOOTSTRAP_SERVERS: "my-cluster-kafka-bootstrap.kafka-infra.svc.cluster.local:9092"
   KAFKA_CONSUMER_GROUP: "meu-grupo-consumidor"
-  KAFKA_SECURITY_PROTOCOL: "SASL_SSL"
-  KAFKA_SASL_MECHANISM: "SCRAM-SHA-512"
+  KAFKA_SECURITY_PROTOCOL: "PLAINTEXT"
+  KAFKA_TOPIC: "mensagens-topic"
