@@ -8,9 +8,7 @@ kind: OperatorGroup
 metadata:
   name: kafka-infra-operator-group
   namespace: kafka-infra
-spec:
-  targetNamespaces:
-  - kafka-infra
+spec: {}
 ---
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
