@@ -10,7 +10,7 @@ metadata:
   namespace: kafka-infra
 spec:
   targetNamespaces:
-    - kafka-infra
+  - kafka-infra
 ---
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
